@@ -1,0 +1,31 @@
+<div class="main top-main">
+  <div class="top-message">
+    <h1>Rarejob daily news article search</h1>
+    <p class="form-heading">Searching one article by words, title or date</p>
+    <div class="form top-form">
+    <div class="form-body">
+      <%= form_tag("/search", :method => 'get') do %>
+        <p>title</p>
+        <input name="title" value="">
+        <p>word</p>
+        <input name="word" value="">
+        <p>release date</p>
+        <input type="date" name="date" value="">
+        <input type="submit" value="search">
+      <% end %>
+    </div>
+    </div>
+    <p class="form-heading">Searching all words in one month</p>
+    <div class="form top-form">
+    <div class="form-body">
+      <%= form_tag("/search_one_month", :method => 'get') do %>
+        <p>year</p>
+        <input name="year" value="">
+        <p>month</p>
+        <input name="month" value="">
+        <input type="submit" value="search">
+      <% end %>
+    </div>
+    </div>
+  </div>
+</div>

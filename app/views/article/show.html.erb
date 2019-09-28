@@ -1,0 +1,12 @@
+<h1>Daily news(<%= @articles[0].release_year %>/<%= @articles[0].release_month %>/<%= @articles[0].release_day %>)</h1>
+<div class="article">
+<h2><%= link_to("#{@articles[0].title}", @articles[0].article_url) %></h2>
+<br> Category: <%= @articles[0].category %>
+<% @articles.each do |word| %>
+  <div class="article-item">
+    <strong><%= word.unlocking_word %></strong>
+    meaning: <%= word.meaning %><br>
+    example: <%= word.example %>
+    <% end %>
+  </div>
+</div>

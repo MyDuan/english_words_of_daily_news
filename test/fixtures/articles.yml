@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: 
+  release_year: 
+  release_month: 
+  release_day: 
+  unlocking_word: 
+  meaning: 
+  example: 
+  article_url: 
+  category: MyString
+
+two:
+  title: 
+  release_year: 
+  release_month: 
+  release_day: 
+  unlocking_word: 
+  meaning: 
+  example: 
+  article_url: 
+  category: MyString

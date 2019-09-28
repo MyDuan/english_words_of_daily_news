@@ -1,0 +1,15 @@
+<h1>All words in <%= params[:year] %> / <%=params[:month]%></h1>
+<div class="article">
+  <% num = 0 %>
+  <% @articles.each do |word| %>
+    <div class="article-item">
+    <% if num % 5 == 0 %>
+      <%= link_to("#{word.title}", word.article_url) %> <br>
+    <% end %>
+    <% num += 1 %>
+      <strong><%= word.unlocking_word %></strong>
+      meaning: <%= word.meaning %><br>
+      example: <%= word.example %>
+    </div>
+  <% end %>
+</div>
