@@ -34,6 +34,7 @@ Search words in Daily news articles.
 ### Run in local
 - install Ruby and Ruby on rails (Rails 5.2.3)
 - `cd english_words_of_daily_news`
+- Run `bundle install`
 - Run `rails s`
 - Url: http://localhost:3000/
 - aws ec2 url: http://3.112.152.77:3100/
