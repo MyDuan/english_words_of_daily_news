@@ -1,10 +1,12 @@
 # README
 
 Search words in Daily news articles.
+- url: http://3.112.152.77:3100/
 
 ### Abstract
 
 - In https://github.com/MyDuan/data_scrapy , get the data from https://www.rarejob.com/dna
+    - just have the data in ~2019.9.27
     - db structure
         - table: `articles`
         ```
@@ -25,7 +27,8 @@ Search words in Daily news articles.
 
 - Here use the data (saved in `db/development.sqlite3` ), to create a english word search engine.
     - Search an article and words by using word, title, date
-    - Search all words of the articles in one month
+        - Now the I just prepare the data in development.sqlite3 in (2017.03.17 ~ 2019.09.27)
+    - Search all words of the articles in one month (2017.03 ~ 2019.07)
 - Use Ruby on rails
 
 ### Run in local
@@ -33,3 +36,4 @@ Search words in Daily news articles.
 - `cd english_words_of_daily_news`
 - Run `rails s`
 - Url: http://localhost:3000/
+- aws ec2 url: http://3.112.152.77:3100/
