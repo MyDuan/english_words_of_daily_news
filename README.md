@@ -37,3 +37,9 @@ Search words in Daily news articles.
 - Run `rails s`
 - Url: http://localhost:3000/
 - aws ec2 url: http://3.112.152.77:3100/
+
+### Version
+ - tested in Mac
+ - rbenv: 1.1.2
+ - Ruby : 2.6.4
+ - Rails: 5.2.3
