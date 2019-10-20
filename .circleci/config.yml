@@ -3,7 +3,7 @@ jobs:
   build_and_test:
     working_directory: ~/english_words_of_daily_news
     docker:
-      - image: circleci/ruby:2.6.4
+      - image: circleci/ruby:2.6.4-browsers
     steps:
       - checkout
       - restore_cache:
