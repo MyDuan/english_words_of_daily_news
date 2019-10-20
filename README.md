@@ -37,7 +37,11 @@ Search words in Daily news articles.
 - Run `bundle install`
 - Run `rails s`
 - Url: http://localhost:3000/
+
+### Deploy
 - aws ec2 url: http://3.112.152.77:3100/
+- heroku url: http://english-words-of-daily-news.herokuapp.com/ (Don't have data now) 
+    
 
 ### Version
  - tested in Mac
