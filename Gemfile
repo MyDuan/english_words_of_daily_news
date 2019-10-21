@@ -6,7 +6,7 @@ ruby '2.6.4'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 # Use sqlite3 as the database for Active Record
-#gem 'sqlite3', group: :development
+gem 'sqlite3', group: :test
 # 本番ではpostgressを使用する
 gem 'pg'#, group: :production
 # Use Puma as the app server
@@ -41,6 +41,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails'
 end
 
 group :development do
