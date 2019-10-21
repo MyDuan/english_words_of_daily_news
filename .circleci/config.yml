@@ -23,8 +23,8 @@ jobs:
           key: v1-dependencies-{{ checksum "Gemfile.lock" }}
 
       - run:
-          name: run tests
-          command: echo running tests
+          name: run Rspec unit tests
+          command: bundle exec rspec
 
   deploy_if_on_master:
     machine: true
