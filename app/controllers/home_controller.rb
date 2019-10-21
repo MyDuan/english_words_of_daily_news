@@ -31,7 +31,12 @@ class HomeController < ApplicationController
   def search_one_month
     if params[:year] != '' and params[:month] != ''
       words_in_article = Article.where(release_year: params[:year], release_month: params[:month])
-      redirect_to("/article/show_one_month/#{params[:year]}/#{params[:month]}")
+      if words_in_article.length > 0
+        redirect_to("/article/show_one_month/#{params[:year]}/#{params[:month]}")
+      else
+        flash[:notice] = "No results!"
+        redirect_to("/") and return
+      end
     else
       flash[:notice] = "No search conditions!"
       redirect_to("/")
