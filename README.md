@@ -1,7 +1,7 @@
 # README
 
 Search words in Daily news articles.
-- url: http://3.112.152.77:3100/
+- url: http://english-words-of-daily-news.herokuapp.com/
 
 ### Abstract
 
@@ -25,7 +25,7 @@ Search words in Daily news articles.
         11|updated_at|datetime|1||0  ~>(insert later)
         ```
 
-- Here use the data (saved in `db/development.sqlite3` ), to create a english word search engine.
+- Here use the data to create a english word search website.
     - Search an article and words by using word, title, date
         - Now the I just prepare the data in development.sqlite3 in (2017.03.17 ~ 2019.09.27)
     - Search all words of the articles in one month (2017.03 ~ 2019.07)
@@ -38,10 +38,11 @@ Search words in Daily news articles.
 - Run `rails s`
 - Url: http://localhost:3000/
 
-### Deploy
-- aws ec2 url: http://3.112.152.77:3100/
-- heroku url: http://english-words-of-daily-news.herokuapp.com/ (Don't have data now) 
-    
+### DB:
+- postgresql
+
+### Deploy to server
+- heroku url: http://english-words-of-daily-news.herokuapp.com/
 
 ### Version
  - tested in Mac
